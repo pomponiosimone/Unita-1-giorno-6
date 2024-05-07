@@ -23,14 +23,28 @@ if (!(numero2 === 5)) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-if ( numero2 % 5 === 0) {console.log("il numero è divisibile per 5")} else {console.log("il risultato viene in decimale")}
+if (numero2 % 5 === 0) {
+  console.log("il numero è divisibile per 5");
+} else {
+  console.log("il risultato viene in decimale");
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
- if (numero2 === 8 || numero === 8 || numero2-numero === 8 || numero-numero2 === 8 || numero2+numero === 8) {console.log("uno dei due numeri è 8 oppure la loro sottrazione o addizione è 8")}
+if (
+  numero2 === 8 ||
+  numero === 8 ||
+  numero2 - numero === 8 ||
+  numero - numero2 === 8 ||
+  numero2 + numero === 8
+) {
+  console.log(
+    "uno dei due numeri è 8 oppure la loro sottrazione o addizione è 8"
+  );
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -39,13 +53,36 @@ if ( numero2 % 5 === 0) {console.log("il numero è divisibile per 5")} else {con
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let Totalshoppingcart = 75;
+const costoSpedizione = 10;
+if (Totalshoppingcart > 50) {
+  console.log(
+    "l'utente ha diritto alla spedizione gratuita, quindi il totale sarà:",
+    Totalshoppingcart
+  );
+} else {
+  console.log(
+    "l utente non ha diritto alla spedizione e pagherà",
+    Totalshoppingcart + costoSpedizione
+  );
+}
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+if (Totalshoppingcart > 50) {
+  console.log(
+    "l'utente ha diritto alla spedizione gratuita, quindi il totale sarà:",
+    Totalshoppingcart - (Totalshoppingcart * 20) / 100
+  );
+} else {
+  console.log(
+    "l utente non ha diritto alla spedizione e pagherà",
+    Totalshoppingcart - (Totalshoppingcart * 20) / 100 + costoSpedizione
+  );
+}
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -54,16 +91,29 @@ if ( numero2 % 5 === 0) {console.log("il numero è divisibile per 5")} else {con
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const card = [100, 200, 50];
+card.sort();
+console.log(card);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+if (typeof numero2 === "number") {
+  console.log("il valore è un numero");
+} else {
+  console.log("non è un numero");
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+if (numero2 % 2 === 0) {
+  console.log(numero2, "il numero è pari");
+} else {
+  console.log(numero2, "il numero è dispari");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
