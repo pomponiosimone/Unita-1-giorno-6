@@ -180,12 +180,15 @@ console.log(me)
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-const numeri10[]
-const numeri10
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+const numeri10 = [1,2,3,4,5,6,7,8,9,10]
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+numeri10[10]=100
+console.log(numeri10[10])
